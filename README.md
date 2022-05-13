@@ -15,5 +15,18 @@ This repository contains the following files:
   * generate_proof: given a leaf of the tree, returns the path from the leaf to the root
   * verify: given an object, verifies if the object is present in the tree
 
-Documentation:
+Documentation
 
+Here is some useful background information for the understanding of this project.
+
+Commitment scheme
+
+A commitment scheme is a cryptographic primitive that allows one to commit to a chosen value (or chosen statement) while keeping it hidden to others, with the ability to reveal the committed value later. Commitment schemes are designed so that a party cannot change the value or statement after they have committed to it: that is, commitment schemes are binding. Commitment schemes have important applications in a number of cryptographic protocols including secure coin flipping, zero-knowledge proofs, and secure computation.
+
+<img src="commitment.png" width="500px">
+
+Merkle trees
+
+A hash tree or Merkle tree is a tree in which every "leaf" (node) is labelled with the cryptographic hash of a data block, and every node that is not a leaf (called a branch, inner node, or inode) is labelled with the cryptographic hash of the labels of its child nodes. A hash tree allows efficient and secure verification of the contents of a large data structure. A hash tree is a generalization of a hash list and a hash chain.
+
+<img src="Hash_Tree.png" width="500px">
