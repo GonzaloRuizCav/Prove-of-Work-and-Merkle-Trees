@@ -15,6 +15,8 @@ This repository contains the following files:
   * generate_proof: given a leaf of the tree, returns the path from the leaf to the root
   * verify: given an object, verifies if the object is present in the tree
 
+- signature.py: Allows the user to create a custom signature making use of the merkle tree concept. The merkle tree generated in this script is not exactly the same as in merkle.py (the hashes are not the concatenation between only the left and right child hashes now). It also allows the user to forge signatures and forge signatures gramatically correct for a message
+
 Documentation
 
 Here is some useful background information for the understanding of this project.
